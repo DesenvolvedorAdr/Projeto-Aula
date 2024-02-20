@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/lnMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp" >
+
+        <ImageView
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/all_inclusive" />
+
+        <ImageView
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_auto_mode_24" />
+
+        <ImageView
+            android:id="@+id/btn3"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_blur_on_24" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvNomeT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnMenu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Ola, Kotlin!" />
+
+    <TextView
+        android:id="@+id/tvTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:padding="16dp"
+        android:text="Fease teste para saber ccomo se encontra no centro da tela."
+        android:textSize="22sp" />
+
+    <View
+        android:background="@color/white"
+        android:layout_width="128dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/tvTexto"
+        android:layout_centerHorizontal="true"
+        android:elevation="5dp" />
+
+    <Button
+        android:id="@+id/btnSortear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="NOVA FRASE"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
